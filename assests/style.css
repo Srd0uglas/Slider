@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    /* Remover bolinhas embaixo dos links */
+    text-decoration: none;
+}
+body{
+    background-color: #000;
+    color: #eee;
+    font-size: 30px;
+}
+header{
+    width: 80%;
+    height: 50px;
+    /* display flex deixou os links um do lado do outro e alinhou ao centro */
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    /* desgrudou os links do canto da tela */
+    margin: auto;
+}
+
+header a{
+    color: #eee;
+    /* deu uma margem dos links (eles não ficaram um grudado no outro) */
+    margin-right: 40px;
+    font-weight: 300;
+}
+
+.container{
+    /* essas duas propriedades ocupam a tela inteira  */
+    height: 100vh;
+    width: 100vw;
+    /* empurrou o header para cima o container ficou junto com header */
+    margin-top: -50px;
+    /* sumir com o scroll do mouse */
+    overflow: hidden;
+}
+
+.container .list .list-item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.container .list .list-item img{
+    /* fez com que a imagem se encaixasse na tela certinho e não estourasse*/
+    object-fit: cover;
+    /* alterando o tamanho ds imagens */
+    width: 100%;
+    height: 100%;
+    /* efeito para deixar a imagem mais escura */
+    filter: brightness(50%);
+}
+.container .list .list-item .content{
+    /* ficar onde eu quero exatamente que ele fique */
+    position: absolute;
+    /* fez o texto descer */
+    top: 20%;
+    /* essas 3 propriedades criaram uma margem na direta do texto  */
+    right: 10%;
+    padding-right: 30%;
+    width: 80%;
+    color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.container .list .list-item .content .titulo{
+    
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+.container .list .list-item .content .descricao{
+   
+
+}
