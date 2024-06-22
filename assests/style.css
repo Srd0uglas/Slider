@@ -63,16 +63,96 @@ header a{
     padding-right: 30%;
     width: 80%;
     color: #eee;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow:0 5px 10px #0004;
 
 }
 .container .list .list-item .content .titulo{
-    
+    font-size: 4em;
     font-weight: 700;
     line-height: 1.3em;
 }
-
 .container .list .list-item .content .descricao{
-   
+    font-size: 1.5em;
+}
 
+.container .list .list-item .content .buttons{
+    /* colunas (um botão embaixo do outro) */
+    display: grid; 
+    /* colocou os botões um ao lado do outro e cada um teve 130px */
+    grid-template-columns: repeat(2,130px);
+    /* esticou os botões */
+    grid-template-rows: 40px;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.container .list .list-item .content .buttons button{
+    border: none;
+    background-color: #eee;
+    /* distância entre as letras */
+    letter-spacing: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    /* todas as letras maiúsculas */
+    text-transform: uppercase;
+}
+
+.container .list .list-item .content .buttons button:hover{
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #eee;
+    transition: 0.7s ease-in-out;
+}
+
+.container .list .list-item .content .buttons button:nth-child(2):hover{
+    background-color: #eee;
+    color: #000;
+    transition: 0.7s ease-in-out;
+}
+
+
+
+
+/* escolher um botão especifico sem uma classse atribuida */
+/* :nth-child(2) selecionou o 2 botão */
+.container .list .list-item .content .buttons button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #eee;
+}
+
+
+/* THUMBS E BUTTONS  */
+.thumb{
+    position: absolute;
+    /* colocou o card das imagens lá para baixo */
+    bottom: 50px;
+    /* colocou as imagens no canto direito da tela */
+    left: 50%;
+    /* uma imagem ao lado da outra */
+    display: flex;
+    /* espaço entre as imagens */
+    gap: 80px;
+}
+
+.thumb-item{
+    width: 135px;
+    height: 200px;
+    position: relative;
+
+}
+
+.thumb-item img{
+    width: 100%;
+    height: 100%;
+    /* não distorcer a imagem */
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(80%);
+}
+
+.cont{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
