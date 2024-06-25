@@ -1,4 +1,4 @@
-Position absolute é marcar 
+
 
 *{
     padding: 0;
@@ -68,7 +68,6 @@ header a{
     padding-right: 30%;
     width: 80%;
     color: #eee;
-    box-shadow:0 5px 10px #0004;
 
 }
 .container .list .list-item .content .titulo{
@@ -160,4 +159,30 @@ header a{
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+
+.setas{
+    display: flex;
+    position: absolute;
+    bottom: 120px;
+    left: 125px;
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+}
+.setas button{
+    border-radius: 10px;
+    border: none;
+    padding: 12px 17px;
+    background-color: #eee4;
+    cursor: pointer;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.setas button:hover{
+    background-color: #eee;
+    color: #000;
+    transition: 0.7s;
 }
