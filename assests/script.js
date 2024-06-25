@@ -14,6 +14,12 @@ btnBack.onclick = () => moveItemsOnclick('back')
 
 // FUNÇÃO PARA MOVIMENTAR OS ITENS QUANDO ELA FOR CHAMADA
 // TYPE: DEFINIR SE É NEXT OU BACK
+         // o move ou back entra dentro desse parenteses
 function moveItemsOnclick(type){
-    console.log(type)
+    // se for "next" vai fazer uma determinada ação
+    if(type === 'next'){
+        
+    }else{
+
+    }
 }
