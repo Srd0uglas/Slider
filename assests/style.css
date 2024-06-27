@@ -11,6 +11,7 @@ body{
     background-color: #000;
     color: #eee;
     font-size: 30px;
+    overflow: hidden;
 }
 header{
     width: 80%;
@@ -136,7 +137,7 @@ header a{
     /* uma imagem ao lado da outra */
     display: flex;
     /* espaço entre as imagens */
-    gap: 80px;
+    gap: 60px;
 }
 
 .thumb-item{
@@ -186,3 +187,44 @@ header a{
     color: #000;
     transition: 0.7s;
 }
+
+/* ANIMAÇÕES */
+
+/* MOVIMENTO DAS THUMBS */
+
+
+
+/* linear = começa e termina na mesma velocidade */
+/* forwards = começa a animação e para em um determinado lugar */
+
+.container.next .thumb{
+    animation: effectNextThumb 0.5s linear 1 forwards;
+}
+
+
+@keyframes effectNextThumb {
+    from{
+        /* movimentaer na horizaontal */
+        transform: translateX(130px);
+    }
+}
+
+
+
+
+/* movumento última thumb */
+
+/* .container.next .thumb .thumb-item:nth-last-child(1){
+    animation: effectLastThumb 0.5s linar 1 forwards;
+}
+
+
+
+@keyframes effectLastThumb{
+    from{
+        width:0;
+        opacity: 0;
+    }
+} */
+
+
